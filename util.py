@@ -23,7 +23,3 @@ def get_prediction(img):
     else:
         pred = "fake"
     return pred
-
-# my_img = cv2.imread("janel (11).jpeg")
-# result = get_prediction(my_img)
-# print(result)
