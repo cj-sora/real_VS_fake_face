@@ -18,7 +18,7 @@ def process(img):
 def get_prediction(img):
     pred = process(img)
     yhat = model.predict(np.expand_dims(pred/255, 0))
-    if yhat > 0.5:
+    if yhat > 0.9:
         pred = "real"
     else:
         pred = "fake"
